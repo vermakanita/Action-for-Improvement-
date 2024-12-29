@@ -93,34 +93,56 @@
 
 
 
-let s1="listen";
-let s2="silent";
-let s= true;
+// let s1="listen";
+// let s2="silenl ";
+// let s= true;
 
 // let a1=s1.split("");
 // let a2=s2.split("");
 // console.log(a1);
 // console.log(a2);
-s1.sort();
-s2.sort();
+// a1.sort();
+// a2.sort();
+// for(let i=0;i<a1.length;i++){
+//     if(a1[i]!=a2[i]){ 
+//         s=false
+//     }
+// }
+
+// if(s){
+//     console.log("anagram");
+    
+// }
+// else{
+//     console.log("not anagram");
+    
+// }
+
+
+let s1= "listen";
+let  s2="silent";
+let r=true;
+
+let a1= s1.split("")
+let a2= s2.split("");
+
+a1.sort();
+a2.sort();
+
+
 for(let i=0;i<a1.length;i++){
-    if(s1[i]!=s2[i]){
-
-
-
-
-
-
-        /s=false
+    for(let j=0;j<a2.length;j++){
+       if(a1[i]!=a2[j]){
+        r=false;
+          
+       } 
     }
 }
-
-if(s){
-    console.log("anagram");
-    
+if(r){
+    console.log("anagaram")
 }
 else{
-    console.log("not anagram");
-    
+
+    console.log("noy anagram")
 }
 
